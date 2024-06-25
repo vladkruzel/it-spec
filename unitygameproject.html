@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unity Game Project</title>
+	<style>
+		/* Set the background image */
+		body {
+			background-image: url("background3.gif");
+			background-size: 100% 100vh; /* cover the entire page */
+			background-repeat: no-repeat;
+			margin: 0;
+			padding: 0;
+			overflow-y: scroll;
+		}
+		
+		/* Add some basic styling to our project window */
+		.project-window {
+			width: 700px;
+			height: 450px;
+			background-color: #322C2B;
+			border: 1px solid #365E32;
+			border-radius: 20px;
+			padding: 20px;
+			margin: 20px auto; /* center the box */
+			display: block;
+			position: relative; /* add this to ensure the window is on top of the background */
+			z-index: 1; /* add this to ensure the window is on top of the background */
+		}
+		
+		/* Add animation to our project image */
+		.project-image {
+			display: block;
+			width: 250px;
+			height: 250px;
+			border-radius: 10px;
+			transition: transform 0.5s;
+			position: absolute; /* position the image at the top-left corner */
+			top: 20px;
+			left: 20px;
+		}
+		
+		.project-image:hover {
+			transform: scale(1.1);
+		}
+		
+		/* Add pointer cursor to our project image */
+		.project-image:hover {
+			cursor: pointer;
+		}
+		
+		.project-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		
+		/* Style the project description */
+		.project-description {
+			margin-left: 270px; /* add some space for the larger image */
+			padding: 20px;
+			color: #ffffff;
+		}
+		
+		/* Style the "Back" button */
+		.back-button {
+			display: block;
+			width: 100px;
+			height: 50px;
+			background-color: #363062;
+			color: #ffffff;
+			border: none;
+			border-radius: 10px;
+			font-size: 18px;
+			text-align: center;
+			line-height: 50px;
+			position: fixed;
+			top: 20px;
+			left: 20px;
+			z-index: 1;
+			text-decoration: none;
+			transition: background-color 0.3s;
+		}
+		
+		.back-button:hover {
+			background-color: #750E21;
+		}
+	</style>
+</head>
+<body>
+	<!-- Add the "Back" button -->
+	<a href="index.html" class="back-button">Back</a>
+	
+	<!-- Add the project window -->
+	<div class="project-window">
+		<!-- Add the project image -->
+		<div class="project-image">
+			<img src="game.gif" alt="Unity Game GIF">
+		</div>
+		
+		<!-- Add the project description -->
+		<div class="project-description">
+			<h1>StickManWayToHome</h1>
+			<p>This game was crated in Unity almost from nothing. 7 people was crating this game including student Kruzel Vlad who was programming code for enemys and looking for sounds and some assets in game. Game is about Stickman who is trying to find way home.  </p>
+			<p>This game is only 100mb and its only for laptops/pc</p>
+		</div>
+	</div>
+</body>
+</html>

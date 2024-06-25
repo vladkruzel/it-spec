@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ColorChangeWebsite.Project</title>
+    <style>
+        /* Set the background image */
+        body {
+            background-image: url("background4.3.gif");
+            background-size: 100% 100vh; /* cover the entire page */
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+        }
+        
+        /* Add some basic styling to our project window */
+        
+        /* Style the project window */
+        .project-window {
+            max-width: 800px; /* max width of the project window */
+            margin: 20px auto; /* center align and provide some margin */
+            position: relative; /* relative positioning for absolute child elements */
+            background-color: rgba(255, 255, 255, 0.1); /* translucent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        /* Add animation to our project image */
+        .project-image {
+            display: block;
+            width: 100%; /* full width within the project window */
+            height: auto; /* maintain aspect ratio */
+            border-radius: 10px;
+            transition: transform 0.5s;
+            margin-bottom: 20px; /* space between image and description */
+        }
+        
+        .project-image:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Add pointer cursor to our project image */
+        .project-image:hover {
+            cursor: pointer;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        /* Style the project description */
+        .project-description {
+            color: #ffffff;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        /* Style the "Back" button */
+        .back-button {
+            display: block;
+            width: 100px;
+            height: 50px;
+            background-color: #363062;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 50px;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #750E21;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add the "Back" button -->
+    <a href="index.html" class="back-button">Back</a>
+    
+    <!-- Add the project window -->
+    <div class="project-window">
+        <!-- Add the project description -->
+        <div class="project-description">
+            <h1>ColorChangeWebsite</h1>
+            <p>This website demonstrates how to change the background color of a webpage using JavaScript. </p>
+            <p>It allows users to select from a list of colors and apply them to the webpage, showcasing basic interaction and dynamic styling in web development.</p>
+        </div>
+        
+        <!-- Add the project image -->
+        <div class="project-image" onclick="openNewWindow()">
+            <img src="ColorChangeWebsite.gif" alt="ColorChangeWebsite">
+        </div>
+    </div>
+
+    <script>
+        function openNewWindow() {
+            window.open('https://perialimkul.github.io/itspecialization/project_cycle2_ivan.html', '_blank');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SchoolNewsWebSite.Project</title>
+	<style>
+		/* Set the background image */
+		body {
+			background-image: url("background4.1.gif");
+			background-size: 100% 100vh; /* cover the entire page */
+			background-repeat: no-repeat;
+			margin: 0;
+			padding: 0;
+			overflow-y: scroll;
+		}
+		
+		/* Add some basic styling to our project window */
+		
+		
+		/* Add animation to our project image */
+		.project-image {
+			display: block;
+			width: 450px; /* updated width */
+			height: 450px; /* updated height */
+			border-radius: 10px;
+			transition: transform 0.5s;
+			position: absolute; /* position the image at the top-right corner */
+			top: 20px;
+			right: 20px;
+		}
+		
+		.project-image:hover {
+			transform: scale(1.1);
+		}
+		
+		/* Add pointer cursor to our project image */
+		.project-image:hover {
+			cursor: pointer;
+		}
+		
+		.project-image img {
+			width: 100%;
+			height: 100%; /* adjust height to 100% */
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		
+		/* Style the project description */
+		.project-description {
+			margin-right: 470px; /* add some space for the larger image */
+			padding: 20px;
+			color: #ffffff;
+			font-size: 20px; /* Increase the font size */
+		}
+		
+		/* Style the "Back" button */
+		.back-button {
+			display: block;
+			width: 100px;
+			height: 50px;
+			background-color: #363062;
+			color: #ffffff;
+			border: none;
+			border-radius: 10px;
+			font-size: 18px;
+			text-align: center;
+			line-height: 50px;
+			position: fixed;
+			bottom: 20px;
+			left: 20px;
+			z-index: 1;
+			text-decoration: none;
+			transition: background-color 0.3s;
+		}
+		
+		.back-button:hover {
+			background-color: #750E21;
+		}
+	</style>
+</head>
+<body>
+	<!-- Add the "Back" button -->
+	<a href="index.html" class="back-button">Back</a>
+	
+	<!-- Add the project window -->
+	<div class="project-window">
+		<!-- Add the project image -->
+		<div class="project-image" onclick="openNewWindow()">
+			<img src="SchoolNewsWebsite.gif" alt="School News GIF">
+		</div>
+		
+		<!-- Add the project description -->
+		<div class="project-description">
+			<h1>SchoolNewsWebSite.Project</h1>
+			<p>  </p>
+			<p>This website is a student news platform where the latest news and updates from the school are shared. In the latest article, the students' visit to the Picasso museum is highlighted. Unfortunately, the trip took an unexpected turn when the students were fined for not purchasing bus tickets on their return journey. The incident has sparked discussion among the student body and has been a hot topic in the school's newspaper "UPdates". Stay tuned for more updates and events happening around the school.</p>
+		</div>
+	</div>
+
+	<script>
+		function openNewWindow() {
+			window.open('https://perialimkul.github.io/sapiensupnews/', '_blank');
+		}
+	</script>
+</body>
+</html>

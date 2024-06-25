@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Projects</title>
+	<style>
+		/* Set the GIF as the full-site background */
+		body {
+			background-image: url("background.gif");
+			background-size: 100% 100vh; /* cover the entire page */
+			background-repeat: no-repeat;
+			margin: 0;
+			padding: 0;
+			overflow-y: scroll;
+		}
+		
+		/* Add some basic styling to our project windows */
+		.project-window {
+			width: 200px;
+			height: 300px;
+			background-color: #B20600;
+			border: 1px solid #E6D2AA;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 10px;
+			display: inline-block;
+			vertical-align: top; /* Ensure vertical alignment */
+			position: relative; /* Ensure the window is on top of the background */
+			z-index: 1; /* Ensure the window is on top of the background */
+		}
+		
+		.project-window-large {
+			width: 700px;
+			height: 450px;
+			padding: 20px;
+			margin: 20px auto; /* Center the large boxes */
+			display: block;
+			border-radius: 20px; /* Increase border radius for a smoother look */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+			position: relative; /* Ensure the window is on top of the background */
+			z-index: 1; /* Ensure the window is on top of the background */
+		}
+		
+		.new-project-background {
+			background-color: #9d9a9a;
+		}
+		
+		/* Add animation to our project images */
+		.project-image {
+			display: block;
+			width: 200px;
+			height: 200px;
+			border-radius: 10px;
+			transition: transform 0.5s;
+		}
+		
+		.project-image:hover {
+			transform: scale(1.1);
+		}
+		
+		/* Add pointer cursor to our project images */
+		.project-image:hover {
+			cursor: pointer;
+		}
+		
+		.project-image img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		
+		/* Center the "Our Projects" text and make it white */
+		.centered-text {
+			text-align: center;
+			color: #ffffff;
+			position: relative; /* Ensure the text is on top of the background */
+			z-index: 1; /* Ensure the text is on top of the background */
+		}
+		
+		/* Make project names white */
+		.project-window h2, .project-window-large h2 {
+			color: #ffffff;
+		}
+		
+		/* Use flexbox to arrange project windows in a single line */
+		.project-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+		
+		.project-container > .project-window {
+			margin: 10px;
+		}
+		
+		.project-container > .project-window-large {
+			display: block;
+			margin: 20px auto; /* Center the large boxes */
+		}
+	</style>
+</head>
+<body>
+	<!-- "Our Projects" text at the top, centered and white -->
+	<div class="centered-text">
+		<h1>Our Projects</h1>
+	</div>
+	
+	<!-- Container for project windows -->
+	<div class="project-container">
+		<!-- 4 project windows with images and text -->
+		<div class="project-row">
+		<div class="project-window">
+			<a href="unitygameproject.html" class="project-image">
+				<img src="gameScreenShot.png" alt="Project 1">
+			</a>
+			<h2>Unity.Game</h2>
+			<p>C#</p>
+		</div>
+		
+		<div class="project-window">
+			<a href="billapp.html" class="project-image">
+				<img src="BillappScreenShot.png" alt="Project 2">
+			</a>
+			<h2>Bill.app</h2>
+			<p>Java</p>
+		</div>
+		
+		<div class="project-window">
+			<a href="QuoteAppProject.html" class="project-image">
+				<img src="Screenshot 2024-06-12 at 12.01.00.png" alt="Project 3">
+			</a>
+			<h2>Quote.Generator</h2>
+			<p>Java</p>
+		</div>
+		
+		<div class="project-window">
+			<a href="PasswordGeneratorProject.html" class="project-image">
+				<img src="PasswordGeneratorScreenShot.png" alt="Project 4">
+			</a>
+			<h2>Password.Generator</h2>
+			<p>Java</p>
+		</div>
+	</div>
+	<div class="project-row">
+		<!-- Additional 4 project windows -->
+		<div class="project-window">
+			<a href="SchoolNewsWebSite.html" class="project-image">
+				<img src="SchoolNewsWebsite.png" alt="Project 5">
+			</a>
+			<h2>School.News.Website</h2>
+			<p>html\css</p>
+		</div>
+		
+		<div class="project-window">
+			<a href="TravelWebsiteProject.html" class="project-image">
+				<img src="travelwebsite.png" alt="Project 6">
+			</a>
+			<h2>Travel.Website</h2>
+			<p>html/css</p>
+		</div>
+		
+		<div class="project-window">
+			<a href="ColorChangeProject.html" class="project-image">
+				<img src="ColorChangeWebsite.png" alt="Project 7">
+			</a>
+			<h2>Color.Change.Website</h2>
+			<p>html/css\jss</p>
+		</div>
+		
+		<div class="project-window">
+			<a href="SchoolProfileProject.html" class="project-image">
+				<img src="Screenshot 2024-06-19 at 12.11.58.png" alt="Project 8">
+			</a>
+			<h2>SchoolProfileProject</h2>
+			<p>css/html\js</p>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
